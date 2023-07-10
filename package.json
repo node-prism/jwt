@@ -1,5 +1,5 @@
 {
-  "name": "jwt",
+  "name": "@prsm/jwt",
   "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -22,7 +22,7 @@
     "release": "bumpp package.json --commit 'Release %s' --push --tag && pnpm publish --access public"
   },
   "keywords": [],
-  "author": "",
+  "author": "nvms",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.4.1",
