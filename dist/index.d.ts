@@ -92,5 +92,10 @@ declare function decode(encoded: string): JWTParts;
  * @returns
  */
 declare function verify(encoded: string, key: string | Buffer, opts?: VerifyOptions): VerifyResult;
+declare const jwt: {
+    encode: typeof encode;
+    decode: typeof decode;
+    verify: typeof verify;
+};
 
-export { JWTHeader, JWTParts, JWTPayload, VerifyOptions, VerifyResult, decode, encode, verify };
+export { JWTHeader, JWTParts, JWTPayload, VerifyOptions, VerifyResult, jwt };
