@@ -310,7 +310,7 @@ function verify(
   return result;
 }
 
-export {
+export const jwt = {
   encode,
   decode,
   verify,
