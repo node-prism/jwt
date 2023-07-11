@@ -1,9 +1,12 @@
-
 # jwt
 
 A package for encoding, decoding, and verifying JWTs.
 
-# Encoding
+# Installation
+
+`npm install @prsm/jwt`
+
+## Encoding
 
 ```typescript
 import { encode } from "@prsm/jwt";
@@ -16,7 +19,7 @@ const payload = {
 const token = encode(payload, process.env.PRIVATE_KEY);
 ```
 
-# Verifying
+## Verifying
 
 ```typescript
 import { verify } from "@prsm/jwt";
@@ -30,7 +33,7 @@ if (!result.nbf) throw new Error("token is not yet valid")
 // token payload is available at result.decoded.payload
 ```
 
-# Decoding
+## Decoding
 
 ```typescript
 import { decode } from "@prsm/jwt";
