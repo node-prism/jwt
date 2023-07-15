@@ -268,7 +268,7 @@ function verify(
   const decoded = decode(encoded);
   const { payload } = decoded;
   const parts = encoded.split(".");
-  const alg = opts.alg ?? decoded.header.alg;
+  const alg = opts.alg ?? decoded.header.alg ?? "HS256";
   const now = Date.now();
   const verifier = Algorithms[alg];
   const result: VerifyResult = { decoded };
