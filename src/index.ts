@@ -174,7 +174,7 @@ function decodeJSONBase64(str: string) {
   try {
     return JSON.parse(dec);
   } catch (e) {
-    console.warn("Failed to parse JSON", dec, e)
+    console.warn("Failed to decode base64 and parse as JSON:", e);
     return dec;
   }
 }
