@@ -18,7 +18,6 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts --clean --minify",
     "test": "tsx tests/index.ts",
-    "benchmark": "tsx tests/benchmark.ts",
     "release": "bumpp package.json --commit 'Release %s' --push --tag && pnpm publish --access public"
   },
   "keywords": [],
